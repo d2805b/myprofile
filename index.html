@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>my page</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="dist/css/swiper.css">
+  <link href="style.sheet" rel="swiper.css">
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+ </head>
+<body>
+  <header>
+    <div class="header-container">
+    <div class="header-title">
+      <h1><a href="#">まちろぐ</a></h1>
+      </div>
+      <nav class="header-right">
+        <ul class="header-list">
+          <li><a href="#">自己紹介</a></li>
+          <li><a href="#">フォトギャラリー</a></li>
+          <li><a href="#">お問い合わせ</a></li>
+          </ul>
+        </nav>
+        </div>
+    </header>
+
+    <!--scroll-->
+        <section class="swiper-container">
+             <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/swiper1.jpg" width="100%" height="500" alt="Swiper01"></div>
+                  <div class="swiper-slide"><img src="img/swiper2.jpg" width="100%" height="500" alt="Swiper02"></div>
+                  <div class="swiper-slide"><img src="img/swiper3.jpg" width="100%" height="500" alt="Swiper03"></div>
+             </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+      </section>
+
+    <!--myself-->
+
+    <section class="myself">
+      <div class="myself-container">
+          <h2 class="title">自己紹介</h2>
+        <div class="introduce-box flex-box">
+          <div class="box-left">
+            <img src="img/profile.jpg" width="200" height="200" alt="profile">
+            </div>
+            <div class="box-right">
+              <h3 class="myname">名前：町田　大哲</h3>
+                <div class="text">
+                  <ul>
+                    <li>沖縄出身。大学まで沖縄で過ごす。</li>
+                    <li>大学卒業後、神奈川で介護士として2年働き、2015年から2017年までオーストラリアへワーキングホリデーに行く。</li>
+                    <li>帰国後はフリーターをしながらアジアを周遊。2018年7月からプログラミングに興味を持ち独学で勉強し始める。</li>
+                  </ul>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--my skill-->
+
+      <section class="myskill">
+        <div class="width980">
+          <h2 class="title">スキル</h2>
+          <div class="skill-container">
+            <div class="skill-contents flex-box">
+              <div class="skill1">
+                <h3>HTML/CSS</h3>
+                <p class="text">
+              </div>
+              <div class="skill2">
+                <h3>Photoshop</h3>
+                <p class="text">
+              </div>
+              <div class="skill3">
+                <h3>php</h3>
+                <p class="text">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--portfolio-->
+
+      <section class="portfolio">
+        <div class="width980">
+          <h2 class="title">模写サイト一覧</h2>
+          <div class="site-contents flex-box">
+            <div class="site1">
+              <h3 class="site1-title">Isaraさん模写</h3>
+              <a href="#"><img src="img/isara.jpg" width="150" height="150" alt="Isaraさん模写"></a>
+              <a class="block" href="https://isara.life/">公式サイトはこちらから</a>
+            </div>
+            <div class="site2">
+              <h3 class="site1-title">XeoryExtensionさん模写</h3>
+              <a href="#"><img src="img/XeoryExtension.jpg" width="150" height="150" alt="XeoryExtensionさん模写"></a>
+              <a class="block" href="https://xeory.jp/extension/">公式サイトはこちらから</a>
+            </div>
+            <div class="site3">
+              <h3 class="site1-title">Noteの模写コンテンツ</h3>
+              <a href="#"><img src="img/cat.jpg" width="150" height="150" alt="cat"></a>
+              <a class="block" href="https://note.mu/chizumi_/n/n7228b0f7cabd">模写したNoteはこちらから</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="pagetop" id="back_to_top">
+         <a><i class="fas fa-chevron-up fa-3x"></i></a>
+        </div>
+
+
+      <script src="dist/js/swiper.js"></script>
+      <script>
+       var swiper = new Swiper('.swiper-container', {
+         navigation: {
+           nextEl: '.swiper-button-next',
+           prevEl: '.swiper-button-prev',
+         },
+       loop: true,
+       autoplay:true,
+       speed: 1000,
+       dots: true,
+       });
+
+       jQuery(window).on("scroll", function($) {
+  if (jQuery(this).scrollTop() > 100) {
+    jQuery('.pagetop').show();
+  } else {
+    jQuery('.pagetop').hide();
+  }
+});
+
+jQuery('.pagetop').click(function () {
+  jQuery('body,html').animate({
+    scrollTop: 0
+  }, 500);
+  return false;
+});
+
+
+       </script>
+</body>
+</html>
