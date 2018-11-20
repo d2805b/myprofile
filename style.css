@@ -1,0 +1,116 @@
+html body{
+  padding: 0;
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+.flex-box{
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+header{
+  position: fixed;
+  z-index: 100;
+  background: rgba(0, 0, 200, 0.4);
+  width: 100%;
+
+}
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  width: 980px;
+  margin: 0 auto;
+}
+.header-right{
+  display: table;
+}
+.header-right ul{
+  margin: 0;
+}
+.header-title a{
+  color: white;
+}
+.header-right li{
+  display: inline-block;
+  transition: 0.5s;
+  padding: 0.6rem;
+}
+.header-right a{
+  padding: 15px 20px;
+  color: white;
+  line-height: 35px;
+}
+.header-list,.header-title{
+  height: 100px;
+	display: flex;
+	align-items: center;
+}
+
+/*scroll*/
+.swiper-container{
+ height: 500px;
+}
+
+
+/*introduce*/
+.title{
+ text-align: center;
+ margin: 0 auto;
+ padding: 15px 0;
+ border-top: 1px solid;
+ border-bottom: 1px solid;
+}
+.introduce-box{
+  margin: 60px 0;
+}
+.box-left img{
+  border-radius: 50%;
+  border: 2px solid skyblue;
+}
+.box-left{
+  width: 30%;
+  text-align: center;
+}
+.box-right{
+  width: 70%;
+}
+.pagetop {
+  position: fixed;
+  right: 50px;
+  bottom: 90px;
+  padding: 10px;
+  background-color: gray;
+  display: none;
+}
+.pagetop a{
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  opacity: 0.6;
+}
+.pagetop a:hover {
+  opacity: 1;
+}
+.block{
+  display: block;
+}
+
+/*模写サイト*/
+.site-contents{
+text-align: center;
+width: 980px;
+margin: 0 auto;
+}
