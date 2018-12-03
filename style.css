@@ -21,6 +21,9 @@ li{
 a{
   text-decoration: none;
 }
+ul{
+  padding: 0;
+}
 header{
   position: fixed;
   z-index: 100;
@@ -62,13 +65,12 @@ header{
 /*scroll*/
 .swiper-container{
  height: 500px;
-width: 100%;
 }
 
 
 /*introduce*/
 .title{
-  text-align: center;
+ text-align: center;
  margin: 0 auto;
  padding: 15px 0;
  position: relative;
@@ -77,7 +79,7 @@ width: 100%;
   content: '';
   position: absolute;
    top:70px;
-   right:500px; /*数字が小さければ小さいほど左に行く*/
+   right:565px;
   border-bottom: 1px solid black;
   display: block;
 width: 200px;
@@ -117,23 +119,27 @@ width: 200px;
   display: block;
 }
 
-/*slill*/
-.skill-container{
+/*skill*/
+.myskill{
+  background-image: url(img/backskill1.jpg);
+  height:100%;
+  width:100%;
+}
+#skill-container{
   width: 980px;
   text-align: center;
   margin: 0 auto;
   padding: 100px 0;
 }
-
-/*portfolio*/
-.site-contents{
+/*.skill1,.skill2,.skill3{
+  width: 33%;
+}*/
+/*模写サイト*/
+#site-contents{
 text-align: center;
 width: 980px;
 margin: 0 auto;
 padding: 100px 0;
-}
-.portfolio a{
-	cursor: point;
 }
 
 /*sns*/
@@ -167,4 +173,3 @@ padding: 100px 0;
 .sns-section a:hover{
   color: blue;
 }
-
