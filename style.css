@@ -68,11 +68,19 @@ width: 100%;
 
 /*introduce*/
 .title{
- text-align: center;
+  text-align: center;
  margin: 0 auto;
  padding: 15px 0;
- border-top: 1px solid;
- border-bottom: 1px solid;
+ position: relative;
+}
+.title::after{
+  content: '';
+  position: absolute;
+   top:70px;
+   right:600px;
+  border-bottom: 1px solid black;
+  display: block;
+width: 150px;
 }
 .introduce-box{
   margin: 60px 0;
