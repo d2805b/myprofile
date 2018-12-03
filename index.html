@@ -6,7 +6,7 @@
   <title>my page</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="swiper.css">
+  <link rel="stylesheet" href="dist/css/swiper.css">
   <link href="style.sheet" rel="swiper.css">
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
  </head>
@@ -18,8 +18,9 @@
       </div>
       <nav class="header-right">
         <ul class="header-list">
-          <li><a href="#">自己紹介</a></li>
-          <li><a href="#">お問い合わせ</a></li>
+          <li class="nav-icon"><a href="#myself-container" data-scroll>selfintroduce</a></li>
+          <li class="nav-icon"><a href="#skill-container" data-scroll>about skill</a></li>
+          <li class="nav-icon"><a href="#site-contents" date-scroll>portfolio</a></li>
           </ul>
         </nav>
         </div>
@@ -28,7 +29,9 @@
     <!--scroll-->
         <section class="swiper-container">
              <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="swiper1.jpg" width="100%" height="500" alt="Swiper01"></div>
+                  <div class="swiper-slide"><img src="img/swiper1.1.jpg" width="100%" height="500" alt="Swiper01"></div>
+                  <div class="swiper-slide"><img src="img/swiper2.2.jpg" width="100%" height="500" alt="Swiper02"></div>
+                  <div class="swiper-slide"><img src="img/swiper3.3.jpg" width="100%" height="500" alt="Swiper03"></div>
              </div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-button-next"></div>
@@ -37,11 +40,11 @@
     <!--myself-->
 
     <section class="myself">
-      <div class="myself-container width980">
-          <h2 class="title">自己紹介</h2>
+      <div id="myself-container">
+          <h2 class="title">Selfintroduce</h2>
         <div class="introduce-box flex-box">
           <div class="box-left">
-            <img src="profile.jpg" width="200" height="200" alt="profile">
+            <img src="img/profile.jpg" width="200" height="200" alt="profile">
             </div>
             <div class="box-right">
               <h3 class="myname">名前：町田　大哲</h3>
@@ -57,26 +60,24 @@
         </div>
       </section>
 
-  <!--myskill-->
-    <section class="myskill">
-          <h2 class="title">スキル</h2>
-          <div class="skill-container">
+      <!--my skill-->
+
+      <section class="myskill">
+          <h2 class="title">My skill</h2>
+          <div id="skill-container">
             <div class="skill-contents flex-box">
               <div class="skill1">
-                <i class="fab fa-html5 fa-4x"></i>
                 <h3>HTML/CSS</h3>
                 <p class="text">これまでに4つのサイト、ラン<br>ディングページを模写してきま<br>
                   した。基本的な作業は行うこと<br>ができます。</p>
               </div>
               <div class="skill2">
-                <i class="fab fa-js-square fa-4x"></i>
-                <h3>JavaScript/jQuery</h3>
+                <h3>JavaScript</h3>
                 <p class="text">jQueryを使ってsliderの作成、<br>モーダルウィンドウの作成、<br>
                   「Topに戻るボタン」を作成する<br>ことができます。</p>
 
               </div>
               <div class="skill3">
-                <i class="fab fa-php fa-4x"></i>
                 <h3>PHP</h3>
                 <p class="text">現在MAMPを使ってudemyの動画コンテ<br>
                   ンツを使い学習中です。</p>
@@ -84,32 +85,33 @@
             </div>
           </div>
       </section>
+
       <!--portfolio-->
 
       <section class="portfolio">
-          <h2 class="title">模写サイト一覧</h2>
-          <div class="site-contents flex-box">
+          <h2 class="title">My Portfolio</h2>
+          <div id="site-contents" class="flex-box">
             <div class="site1">
               <h3 class="site1-title">Isaraさん模写</h3>
-              <a href="https://d2805b.github.io/isara/"><img src="isara.jpg" width="150" height="150" alt="Isaraさん模写"></a>
-              <a class="block" href="https://d2805b.github.io/isara/">公式サイトはこちらから</a>
+              <a href="https://d2805b.github.io/isara/"><img src="img/isara.jpg" width="150" height="150" alt="Isaraさん模写"></a>
+              <a class="block" href="https://isara.life/">公式サイトはこちらから</a>
             </div>
             <div class="site2">
               <h3 class="site1-title">XeoryExtensionさん模写</h3>
-              <a href="https://d2805b.github.io/lp2nd/"><img src="XeoryExtension.jpg" width="150" height="150" alt="XeoryExtensionさん模写"></a>
-              <a class="block" href="">公式サイトはこちらから</a>
+              <a href="https://d2805b.github.io/lp2nd/"><img src="img/XeoryExtension.jpg" width="150" height="150" alt="XeoryExtensionさん模写"></a>
+              <a class="block" href="https://xeory.jp/extension/">公式サイトはこちらから</a>
             </div>
             <div class="site3">
               <h3 class="site1-title">Noteの模写コンテンツ</h3>
-              <a href="https://d2805b.github.io/cat/"><img src="cat.jpg" width="150" height="150" alt="cat"></a>
-              <a class="block" href="">模写ノートはこちらから</a>
+              <a href="https://d2805b.github.io/cat/"><img src="img/cat.jpg" width="150" height="150" alt="cat"></a>
+              <a class="block" href="https://note.mu/chizumi_/n/n7228b0f7cabd">模写したNoteはこちらから</a>
             </div>
           </div>
       </section>
-  
-  <!--sns-->
 
-    <section class="sns">
+      <!--sns-->
+
+      <section class="sns">
         <div class="sns-container">
           <h2 class="title">SNS<h2>
             <div class="sns-contents flex-box">
@@ -125,16 +127,13 @@
             </div>
         </div>
       </section>
-      
-      <footer>
-        
-      </footer>
+
       <div class="pagetop" id="back_to_top">
          <a><i class="fas fa-chevron-up fa-3x"></i></a>
         </div>
 
 
-      <script src="swiper.js"></script>
+      <script src="dist/js/swiper.js"></script>
       <script>
        var swiper = new Swiper('.swiper-container', {
          navigation: {
