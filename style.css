@@ -109,9 +109,12 @@ width: 100%;
   display: block;
 }
 
-/*模写サイト*/
+/*portfolio*/
 .site-contents{
 text-align: center;
 width: 980px;
 margin: 0 auto;
+}
+.portfolio a{
+	cursor: point;
 }
