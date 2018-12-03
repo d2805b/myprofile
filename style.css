@@ -77,7 +77,7 @@ width: 100%;
   content: '';
   position: absolute;
    top:70px;
-   right:50px;
+   right:500px; /*数字が小さければ小さいほど左に行く*/
   border-bottom: 1px solid black;
   display: block;
 width: 200px;
