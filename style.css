@@ -117,6 +117,14 @@ width: 150px;
   display: block;
 }
 
+/*slill*/
+.skill-container{
+  width: 980px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
 /*portfolio*/
 .site-contents{
 text-align: center;
