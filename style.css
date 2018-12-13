@@ -176,6 +176,8 @@ padding: 100px 0;
 }
 
 footer{
+text-align: center;
+margin: 0 auto;
 height: 100px;
 display: table;
 width: 100%;
