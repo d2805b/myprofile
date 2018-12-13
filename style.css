@@ -184,6 +184,8 @@ width: 100%;
 background-color: gray;
 }
 .footer-title{
+ text-align: center;
+ margin: 0 auto;
  display: table-cell;
  vertical-align: middle;
  color: white;
