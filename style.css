@@ -179,9 +179,13 @@ footer{
 height: 100px;
 display: table;
 width: 100%;
+background-color: gray;
 }
 .footer-title{
  display: table-cell;
  vertical-align: middle;
+ color: white;
+ opacity: 0.7;
+ 
 }
 	
